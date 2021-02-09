@@ -1,0 +1,1 @@
+xcodebuild "-project" "Client.xcodeproj" "-scheme" "Fennec" "COMPILER_INDEX_STORE_ENABLE=NO" "archive" "-archivePath" "./tmp/Fennec.xcarchive" "-destination" "generic/platform=iOS"
