@@ -9984,9 +9984,9 @@
 				DEVELOPMENT_TEAM = DT2C2FZ7U2;
 				INFOPLIST_FILE = Extensions/Today/Info.plist;
 				OTHER_SWIFT_FLAGS = "-DMOZ_CHANNEL_RELEASE -DMOZ_TARGET_TODAY";
-				PRODUCT_BUNDLE_IDENTIFIER = "$(MOZ_BUNDLE_ID).$(PRODUCT_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.bitrise.Client.Firefox.Today;
 				PRODUCT_NAME = Today;
-				PROVISIONING_PROFILE_SPECIFIER = "Firefox Client Fennec Today Profile";
+				PROVISIONING_PROFILE_SPECIFIER = "Firefox Client Firefox Today Profile";
 				SKIP_INSTALL = NO;
 			};
 			name = Firefox;
@@ -10042,8 +10042,8 @@
 				DEVELOPMENT_TEAM = DT2C2FZ7U2;
 				INFOPLIST_FILE = Extensions/NotificationService/Info.plist;
 				OTHER_SWIFT_FLAGS = "-DMOZ_CHANNEL_RELEASE -DMOZ_TARGET_NOTIFICATIONSERVICE";
-				PRODUCT_BUNDLE_IDENTIFIER = "$(MOZ_BUNDLE_ID).$(PRODUCT_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Firefox Client Fennec NotificationService Profile";
+				PRODUCT_BUNDLE_IDENTIFIER = io.bitrise.Client.Firefox.NotificationService;
+				PROVISIONING_PROFILE_SPECIFIER = "Firefox Client Firefox NotificationService Profile";
 				SKIP_INSTALL = NO;
 			};
 			name = Firefox;
@@ -10161,8 +10161,8 @@
 				DEVELOPMENT_TEAM = DT2C2FZ7U2;
 				INFOPLIST_FILE = WidgetKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "$(MOZ_BUNDLE_ID).WidgetKit";
-				PROVISIONING_PROFILE_SPECIFIER = "Firefox Client Fennec WidgetKit Profile";
+				PRODUCT_BUNDLE_IDENTIFIER = io.bitrise.Client.Firefox.WidgetKitExtension;
+				PROVISIONING_PROFILE_SPECIFIER = "Firefox Client Firefox WidgetKit Extension Profile";
 				SKIP_INSTALL = NO;
 			};
 			name = Firefox;
@@ -10219,10 +10219,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(MOZ_BUNDLE_ID)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.bitrise.Client.Firefox;
 				PRODUCT_MODULE_NAME = Client;
 				PRODUCT_NAME = Client;
-				PROVISIONING_PROFILE_SPECIFIER = "BR Firefox App Store";
+				PROVISIONING_PROFILE_SPECIFIER = "Firefox Client Firefox Profile";
 				SKIP_INSTALL = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Client/Client-Bridging-Header.h";
 				VALIDATE_WORKSPACE = YES;
@@ -10247,8 +10247,8 @@
 				DEVELOPMENT_TEAM = DT2C2FZ7U2;
 				INFOPLIST_FILE = Extensions/ShareTo/Info.plist;
 				OTHER_SWIFT_FLAGS = "-DMOZ_CHANNEL_RELEASE -DMOZ_TARGET_SHARETO";
-				PRODUCT_BUNDLE_IDENTIFIER = "$(MOZ_BUNDLE_ID).$(PRODUCT_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Firefox Client Fennec ShareTo Profile";
+				PRODUCT_BUNDLE_IDENTIFIER = io.bitrise.Client.Firefox.ShareTo;
+				PROVISIONING_PROFILE_SPECIFIER = "Firefox Client Firefox ShareTo Profile";
 				SKIP_INSTALL = NO;
 			};
 			name = Firefox;
@@ -10265,7 +10265,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DT2C2FZ7U2;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = "Shared/Supporting Files/Info.plist";
 				LOCALIZED_STRING_MACRO_NAMES = (
@@ -10336,7 +10338,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DT2C2FZ7U2;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = Sync/Info.plist;
 				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/Sync/Sync-Bridging-Header.h";

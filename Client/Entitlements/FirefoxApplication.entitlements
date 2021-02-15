@@ -6,7 +6,7 @@
 	<string>production</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.org.mozilla.ios.Firefox</string>
+		<string>group.io.bitrise.Client.Firefox</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
